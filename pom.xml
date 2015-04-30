@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.redhat.gss.kie</groupId>
-	<artifactId>kie-spring-hello-world</artifactId>
+	<artifactId>kie-spring-on-eap</artifactId>
 	<version>1.0</version>
 	<name>Kie Spring Hello World</name>
-	<description>The simples application using Kie Spring API</description>
+	<description>The simples application using Kie Spring API to run on JBoss EAP</description>
 	<packaging>war</packaging>
 
 	<properties>
@@ -43,11 +43,23 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.kie</groupId>
+			<artifactId>kie-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.kie</groupId>
 			<artifactId>kie-spring</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-ci</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-compiler</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>commons-logging</groupId>
