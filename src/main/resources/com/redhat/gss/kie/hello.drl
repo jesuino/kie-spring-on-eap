@@ -1,0 +1,9 @@
+//created on: Apr 10, 2015
+package com.redhat.gss.kie
+rule "Hello World Rule"
+
+    when
+        eval(true)
+    then
+        System.out.println("Hello World!");
+end
